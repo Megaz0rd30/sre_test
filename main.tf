@@ -12,7 +12,7 @@ provider "aws" {
 }
 module "Golden_Base" {
   source = "./modules/Golden_Image"
-  Manifest_path = "/Users/megaz0rd/GALP_SRE"
+  Manifest_path = "${path.root}"
 }
 
 module "Network_Base" {
