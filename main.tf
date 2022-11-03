@@ -12,7 +12,7 @@ provider "aws" {
 }
 module "Golden_Base" {
   source = "./modules/Golden_Image"
-  Manifest_path = "${path.root}"
+  Manifest_path = "${abspath(path.root)}"
 }
 
 module "Network_Base" {
