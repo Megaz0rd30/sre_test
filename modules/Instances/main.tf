@@ -132,7 +132,7 @@ resource "aws_alb_target_group" "target_group_alb" {
     protocol = "HTTP"
     vpc_id   = var.Network.main_vpc
     load_balancing_algorithm_type = "round_robin"
-    # Alter the destination of the health check to be the login page.
+
     health_check {
         path = "/"
         port = 80
